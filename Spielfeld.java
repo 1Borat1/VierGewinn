@@ -66,11 +66,17 @@ public class Spielfeld
         {
             for(int i=0; i>Spielfeld.length-4; i++)
             {
-                if(Spielfeld[i][j].gibZeichen() == Spielfeld[i+1][j].gibZeichen() && 
-                   Spielfeld[i][j].gibZeichen() == Spielfeld[i+2][j].gibZeichen() &&
-                   Spielfeld[i][j].gibZeichen() == Spielfeld[i+3][j].gibZeichen())
+                if(Spielfeld[i][j]!=null &&
+                      Spielfeld[i+1][j]!=null &&
+                      Spielfeld[i+2][j]!=null &&
+                      Spielfeld[i+3][j]!=null )
                 {
-                    return true;
+                        if(Spielfeld[i][j].gibZeichen() == Spielfeld[i+1][j].gibZeichen() && 
+                            Spielfeld[i][j].gibZeichen() == Spielfeld[i+2][j].gibZeichen() &&
+                            Spielfeld[i][j].gibZeichen() == Spielfeld[i+3][j].gibZeichen())
+                            {
+                                return true;
+                            }
                 }
             }
             return false;
@@ -88,12 +94,19 @@ public class Spielfeld
         {
             for(int j=0; j>Spielfeld.length-4; j++)
             {
-                if(Spielfeld[i][j].gibZeichen() == Spielfeld[i][j+1].gibZeichen() && 
-                   Spielfeld[i][j].gibZeichen() == Spielfeld[i][j+2].gibZeichen() &&
-                   Spielfeld[i][j].gibZeichen() == Spielfeld[i][j+3].gibZeichen())
-                {
-                    return true;
-                }
+                   if(Spielfeld[i][j]!=null &&
+                      Spielfeld[i][j+1]!=null &&
+                      Spielfeld[i][j+2]!=null &&
+                      Spielfeld[i][j+3]!=null )
+                   {
+                       if(Spielfeld[i][j].gibZeichen() == Spielfeld[i][j+1].gibZeichen() && 
+                          Spielfeld[i][j].gibZeichen() == Spielfeld[i][j+2].gibZeichen() &&
+                          Spielfeld[i][j].gibZeichen() == Spielfeld[i][j+3].gibZeichen())
+                          {
+                              return true;
+                    
+                          }
+                    }
             }
             return false;
         }
