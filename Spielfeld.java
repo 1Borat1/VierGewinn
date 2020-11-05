@@ -76,7 +76,7 @@ public class Spielfeld
                             Spielfeld[i][j].gibZeichen() == Spielfeld[i+3][j].gibZeichen())
                             {
                                 return true;
-                            }
+                       }
                 }
             }
             return false;
@@ -85,7 +85,7 @@ public class Spielfeld
     }       
 
     /**
-     * Diese Methode überprüft, ob es horizontal zu einer Viererreihe gekommen ist. Dazu muss das gesamte Array durchlaufen werden.
+     * Spalte Diese Methode überprüft, ob es horizontal zu einer Viererreihe gekommen ist. Dazu muss das gesamte Array durchlaufen werden.
      */
     private boolean pruefeVierInEinerZeile ()
     {
