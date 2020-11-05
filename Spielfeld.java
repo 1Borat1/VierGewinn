@@ -112,7 +112,9 @@ public class Spielfeld
         {
             for(int a = 0;a<Spielfeld[0].length-2;a++)
             {
-            if (Spielfeld[i][a].gibZeichen() == Spielfeld[i+1][a+1].gibZeichen() && Spielfeld [i][a].gibZeichen() == Spielfeld [i+2][a+2].gibZeichen() && Spielfeld [a][i].gibZeichen()==Spielfeld [i+3][a+3].gibZeichen())
+            if (Spielfeld[i][a].gibZeichen() == Spielfeld[i+1][a+1].gibZeichen() &&
+            Spielfeld [i][a].gibZeichen() == Spielfeld [i+2][a+2].gibZeichen() && 
+            Spielfeld [a][i].gibZeichen()==Spielfeld [i+3][a+3].gibZeichen())
             {
                     return true;
             }
