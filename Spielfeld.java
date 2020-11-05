@@ -114,7 +114,7 @@ public class Spielfeld
     }
 
     /**
-     * Diese Methode überprüft, ob es Diagonal von Links nach Rechts zu einer Viererreihe gekommen ist. Dazu muss das gesamte Array durchlaufen werden,
+     * Diese Methode überprüft, ob es,,, Diagonal von Links nach Rechts zu einer Viererreihe gekommen ist. Dazu muss das gesamte Array durchlaufen werden,
      * allerdings kommen in der näheren Betrachtung nur wenige Diagonale in Frage, beispielsweise am Rand gar keine Viererreihen
      * entstehen können.
      */
